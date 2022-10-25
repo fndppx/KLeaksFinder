@@ -1,22 +1,26 @@
 {
   "name": "KLeaksFinder",
   "version": "0.1.0",
-  "summary": "A short description of KLeaksFinder.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/keyan/KLeaksFinder",
+  "summary": "MLeaksFinder 的内存泄漏检测",
+  "description": "内存泄漏检测.",
+  "homepage": "https://github.com/fndppx/KLeaksFinder",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "keyan": "weikeyan@zuoyebang.com"
+    "keyan": "270022748@qq.com"
   },
   "source": {
-    "git": "https://github.com/keyan/KLeaksFinder.git",
+    "git": "https://github.com/fndppx/KLeaksFinder.git",
     "tag": "0.1.0"
   },
   "platforms": {
     "ios": "10.0"
   },
-  "source_files": "KLeaksFinder/Classes/**/*"
+  "source_files": "KLeaksFinder/Classes/**/*",
+  "public_header_files": [
+    "MLeaksFinder/MLeaksFinder.h",
+    "MLeaksFinder/NSObject+MemoryLeak.h"
+  ]
 }

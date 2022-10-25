@@ -32,6 +32,10 @@ Pod::Spec.new do |s|
 
   s.source_files = 'KLeaksFinder/Classes/**/*'
   
+  s.public_header_files = 'MLeaksFinder/MLeaksFinder.h', 'MLeaksFinder/NSObject+MemoryLeak.h'
+    
+#  s.dependency 'FBRetainCycleDetector', '0.1.4'
+  
   # s.resource_bundles = {
   #   'KLeaksFinder' => ['KLeaksFinder/Assets/*.png']
   # }

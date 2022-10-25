@@ -30,6 +30,8 @@
 #import <mach-o/dyld.h>
 #import <mach-o/loader.h>
 #import <mach-o/nlist.h>
+#import <mach/vm_map.h>
+#import <mach/mach_init.h>
 
 #ifdef __LP64__
 typedef struct mach_header_64 mach_header_t;

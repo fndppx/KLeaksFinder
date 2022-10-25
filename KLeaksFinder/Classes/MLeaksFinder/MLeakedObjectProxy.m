@@ -14,7 +14,7 @@
 #import <UIKit/UIKit.h>
 
 #if _INTERNAL_MLF_RC_ENABLED
-#import <FBRetainCycleDetector/FBRetainCycleDetector.h>
+#import <FBRetainCycleDetector.h>
 #endif
 
 static NSMutableSet *leakedObjectPtrs;
