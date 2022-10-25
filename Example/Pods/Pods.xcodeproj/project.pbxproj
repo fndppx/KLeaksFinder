@@ -1,0 +1,776 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A872148ED91BFAD1F1067D662858B2B /* Pods-KLeaksFinder_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 11928544B15622DDF7CDB7466D5D6809 /* Pods-KLeaksFinder_Tests-dummy.m */; };
+		2FBDF3F4DAF06E72E7635D4822FCDECC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		30D4D07848C5C3F2457B49A9A3B20E9E /* Pods-KLeaksFinder_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EB7DA7EFCF1F07B09598FF3B97C89EB4 /* Pods-KLeaksFinder_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55D3621AC44A7CF85218A736DFF1C019 /* Pods-KLeaksFinder_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E50C9F51B8620F4574754F2F6E1EA49E /* Pods-KLeaksFinder_Example-dummy.m */; };
+		638702FCD5407CD6525F4395A5690058 /* KLeaksFinder-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D53269D1CA9B984AABC5FDA0256C10D8 /* KLeaksFinder-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7EFD898393EBE91F8E09356D696460B7 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 87D013D3A8F2B7C53FF47C71D39AAC90 /* ReplaceMe.m */; };
+		8D1E2FC61D2A613ABDB9AC5B966E85E9 /* Pods-KLeaksFinder_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B03A0E612842C277ADC08F48F0D3218 /* Pods-KLeaksFinder_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A02F0D610B9C91B40E8AECE9272CAFBC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		C8D110EB285D52F5063300355DA2A820 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		EFFD086DA46C3175779850DD71CF06CA /* KLeaksFinder-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DB172193B2A5DE5EBE5B1A51CE8AF21A /* KLeaksFinder-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		236A01E54EABC24875287148B1808A25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 951089D0DD5F7CB66C4258C907950C98;
+			remoteInfo = KLeaksFinder;
+		};
+		63460BC0B805C9153424329AB89AEA98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B58D4CE06B1DC558EB2AAEEC64EACBF8;
+			remoteInfo = "Pods-KLeaksFinder_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0647547B0BF7A05EFB321E6D4CA92FB4 /* KLeaksFinder-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KLeaksFinder-Info.plist"; sourceTree = "<group>"; };
+		10000965B90AC578A1BF09BC4D441B08 /* Pods-KLeaksFinder_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-KLeaksFinder_Example"; path = Pods_KLeaksFinder_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		11928544B15622DDF7CDB7466D5D6809 /* Pods-KLeaksFinder_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KLeaksFinder_Tests-dummy.m"; sourceTree = "<group>"; };
+		280F177DA650C66F1960DCC0C1DCFD3F /* Pods-KLeaksFinder_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KLeaksFinder_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3CA3D42BEB4622B336510135B16AD5D6 /* Pods-KLeaksFinder_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KLeaksFinder_Example.modulemap"; sourceTree = "<group>"; };
+		42349D4F8194776EFDC41508A9062FFB /* Pods-KLeaksFinder_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KLeaksFinder_Tests.modulemap"; sourceTree = "<group>"; };
+		436D89E64E14E68BC50AF7CAAD39AE76 /* Pods-KLeaksFinder_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KLeaksFinder_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5150242F43125DB64DEC704DD58B4954 /* KLeaksFinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KLeaksFinder.release.xcconfig; sourceTree = "<group>"; };
+		5B03A0E612842C277ADC08F48F0D3218 /* Pods-KLeaksFinder_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KLeaksFinder_Tests-umbrella.h"; sourceTree = "<group>"; };
+		6B1E8FE73ED707384275F91C24E8982C /* KLeaksFinder.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KLeaksFinder.modulemap; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		76B744523A3105FB6F38D1BC438046F9 /* KLeaksFinder.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = KLeaksFinder.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		86E60C95E154E7215339544369548824 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		87D013D3A8F2B7C53FF47C71D39AAC90 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = KLeaksFinder/Classes/ReplaceMe.m; sourceTree = "<group>"; };
+		8D98AFADC3BF6E19B5744A97EBFEED26 /* Pods-KLeaksFinder_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-KLeaksFinder_Tests"; path = Pods_KLeaksFinder_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		907E6B038F704D15EF6C7E68AFC1B48D /* Pods-KLeaksFinder_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KLeaksFinder_Tests-Info.plist"; sourceTree = "<group>"; };
+		92163AE8C6F4BF0FB35B4B3EE96A5434 /* Pods-KLeaksFinder_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KLeaksFinder_Example.release.xcconfig"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9FA8A55E0E9896677DC68685AEE50971 /* Pods-KLeaksFinder_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KLeaksFinder_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		ABF1DC0157870330612443B6EFBB01E7 /* Pods-KLeaksFinder_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KLeaksFinder_Example-frameworks.sh"; sourceTree = "<group>"; };
+		ACB6C3DF0F3442003C56AE567250698F /* Pods-KLeaksFinder_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KLeaksFinder_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		B6F394E1031B22775D94A6D435144098 /* KLeaksFinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KLeaksFinder.debug.xcconfig; sourceTree = "<group>"; };
+		BBCA6A90B02978AA561D1084DBA63E7C /* KLeaksFinder */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KLeaksFinder; path = KLeaksFinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFC63EB4CE224E9213CDAA420DE998D2 /* KLeaksFinder-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KLeaksFinder-prefix.pch"; sourceTree = "<group>"; };
+		C3F3DDDE53FA162DD079D78508C7BA5A /* Pods-KLeaksFinder_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KLeaksFinder_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		C4858F5CB1B3B63EA422D2D7676E9D56 /* Pods-KLeaksFinder_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KLeaksFinder_Example-Info.plist"; sourceTree = "<group>"; };
+		D53269D1CA9B984AABC5FDA0256C10D8 /* KLeaksFinder-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KLeaksFinder-umbrella.h"; sourceTree = "<group>"; };
+		DB172193B2A5DE5EBE5B1A51CE8AF21A /* KLeaksFinder-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KLeaksFinder-dummy.m"; sourceTree = "<group>"; };
+		DB1A645E6D979646A3DC99FF60EFF242 /* Pods-KLeaksFinder_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KLeaksFinder_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		E50C9F51B8620F4574754F2F6E1EA49E /* Pods-KLeaksFinder_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KLeaksFinder_Example-dummy.m"; sourceTree = "<group>"; };
+		EB7DA7EFCF1F07B09598FF3B97C89EB4 /* Pods-KLeaksFinder_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KLeaksFinder_Example-umbrella.h"; sourceTree = "<group>"; };
+		EE1B2EF41BB285C8ADD9FAF93EDE7161 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		F49B0F0401CB664C408FAA3D62BD72A9 /* Pods-KLeaksFinder_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KLeaksFinder_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4AD5F71EF36C27ACC5EEE639C2CF9701 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A02F0D610B9C91B40E8AECE9272CAFBC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		747DAB1CACB32ABABDA726DF0073EB76 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FBDF3F4DAF06E72E7635D4822FCDECC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A3D8FE3D2F04AB957040E063AB3F14F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8D110EB285D52F5063300355DA2A820 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11D460EDA2D17688FD3477C8D0E2B228 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				76B744523A3105FB6F38D1BC438046F9 /* KLeaksFinder.podspec */,
+				86E60C95E154E7215339544369548824 /* LICENSE */,
+				EE1B2EF41BB285C8ADD9FAF93EDE7161 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		3207A6161993075475C2274162B4C380 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6B1E8FE73ED707384275F91C24E8982C /* KLeaksFinder.modulemap */,
+				DB172193B2A5DE5EBE5B1A51CE8AF21A /* KLeaksFinder-dummy.m */,
+				0647547B0BF7A05EFB321E6D4CA92FB4 /* KLeaksFinder-Info.plist */,
+				BFC63EB4CE224E9213CDAA420DE998D2 /* KLeaksFinder-prefix.pch */,
+				D53269D1CA9B984AABC5FDA0256C10D8 /* KLeaksFinder-umbrella.h */,
+				B6F394E1031B22775D94A6D435144098 /* KLeaksFinder.debug.xcconfig */,
+				5150242F43125DB64DEC704DD58B4954 /* KLeaksFinder.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/KLeaksFinder";
+			sourceTree = "<group>";
+		};
+		432F5A78153E0404382325DC50204B5F /* Pods-KLeaksFinder_Example */ = {
+			isa = PBXGroup;
+			children = (
+				3CA3D42BEB4622B336510135B16AD5D6 /* Pods-KLeaksFinder_Example.modulemap */,
+				280F177DA650C66F1960DCC0C1DCFD3F /* Pods-KLeaksFinder_Example-acknowledgements.markdown */,
+				F49B0F0401CB664C408FAA3D62BD72A9 /* Pods-KLeaksFinder_Example-acknowledgements.plist */,
+				E50C9F51B8620F4574754F2F6E1EA49E /* Pods-KLeaksFinder_Example-dummy.m */,
+				ABF1DC0157870330612443B6EFBB01E7 /* Pods-KLeaksFinder_Example-frameworks.sh */,
+				C4858F5CB1B3B63EA422D2D7676E9D56 /* Pods-KLeaksFinder_Example-Info.plist */,
+				EB7DA7EFCF1F07B09598FF3B97C89EB4 /* Pods-KLeaksFinder_Example-umbrella.h */,
+				C3F3DDDE53FA162DD079D78508C7BA5A /* Pods-KLeaksFinder_Example.debug.xcconfig */,
+				92163AE8C6F4BF0FB35B4B3EE96A5434 /* Pods-KLeaksFinder_Example.release.xcconfig */,
+			);
+			name = "Pods-KLeaksFinder_Example";
+			path = "Target Support Files/Pods-KLeaksFinder_Example";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		8B68D2E77E34C8FD22C7DEE258D35BF9 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				432F5A78153E0404382325DC50204B5F /* Pods-KLeaksFinder_Example */,
+				A0D7F13EEDE3D2E2C762798F95A85D0B /* Pods-KLeaksFinder_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		A0D7F13EEDE3D2E2C762798F95A85D0B /* Pods-KLeaksFinder_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				42349D4F8194776EFDC41508A9062FFB /* Pods-KLeaksFinder_Tests.modulemap */,
+				436D89E64E14E68BC50AF7CAAD39AE76 /* Pods-KLeaksFinder_Tests-acknowledgements.markdown */,
+				9FA8A55E0E9896677DC68685AEE50971 /* Pods-KLeaksFinder_Tests-acknowledgements.plist */,
+				11928544B15622DDF7CDB7466D5D6809 /* Pods-KLeaksFinder_Tests-dummy.m */,
+				907E6B038F704D15EF6C7E68AFC1B48D /* Pods-KLeaksFinder_Tests-Info.plist */,
+				5B03A0E612842C277ADC08F48F0D3218 /* Pods-KLeaksFinder_Tests-umbrella.h */,
+				ACB6C3DF0F3442003C56AE567250698F /* Pods-KLeaksFinder_Tests.debug.xcconfig */,
+				DB1A645E6D979646A3DC99FF60EFF242 /* Pods-KLeaksFinder_Tests.release.xcconfig */,
+			);
+			name = "Pods-KLeaksFinder_Tests";
+			path = "Target Support Files/Pods-KLeaksFinder_Tests";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D8A37585A2F5B10EE193570C234E329F /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				EC1585A0118CD0044426BA40958D3BBE /* Products */,
+				8B68D2E77E34C8FD22C7DEE258D35BF9 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D68148DBEB75938C7761F9A7654BC0CD /* KLeaksFinder */ = {
+			isa = PBXGroup;
+			children = (
+				87D013D3A8F2B7C53FF47C71D39AAC90 /* ReplaceMe.m */,
+				11D460EDA2D17688FD3477C8D0E2B228 /* Pod */,
+				3207A6161993075475C2274162B4C380 /* Support Files */,
+			);
+			name = KLeaksFinder;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		D8A37585A2F5B10EE193570C234E329F /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D68148DBEB75938C7761F9A7654BC0CD /* KLeaksFinder */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		EC1585A0118CD0044426BA40958D3BBE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BBCA6A90B02978AA561D1084DBA63E7C /* KLeaksFinder */,
+				10000965B90AC578A1BF09BC4D441B08 /* Pods-KLeaksFinder_Example */,
+				8D98AFADC3BF6E19B5744A97EBFEED26 /* Pods-KLeaksFinder_Tests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		239EDC263B28D4225A8AFBE43B854F38 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				638702FCD5407CD6525F4395A5690058 /* KLeaksFinder-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30835A490A2291EBD87781E5EA7C8383 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D1E2FC61D2A613ABDB9AC5B966E85E9 /* Pods-KLeaksFinder_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7649A6A1A58A076CC30B884F397215B6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30D4D07848C5C3F2457B49A9A3B20E9E /* Pods-KLeaksFinder_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3BBF57E3382AF0AFACC9CC58057F93B4 /* Pods-KLeaksFinder_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 065B763BCED0C671B2AD1F3D086FE79D /* Build configuration list for PBXNativeTarget "Pods-KLeaksFinder_Tests" */;
+			buildPhases = (
+				30835A490A2291EBD87781E5EA7C8383 /* Headers */,
+				3023DDAD3A1DC4B5E627BD2F6051B8E0 /* Sources */,
+				7A3D8FE3D2F04AB957040E063AB3F14F /* Frameworks */,
+				D5D12A3D1FE93BA5FCE6654BD5C36DA1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A877572947CBE8AE714AAF7995D211FF /* PBXTargetDependency */,
+			);
+			name = "Pods-KLeaksFinder_Tests";
+			productName = Pods_KLeaksFinder_Tests;
+			productReference = 8D98AFADC3BF6E19B5744A97EBFEED26 /* Pods-KLeaksFinder_Tests */;
+			productType = "com.apple.product-type.framework";
+		};
+		951089D0DD5F7CB66C4258C907950C98 /* KLeaksFinder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2853932D25E524DEE869BAA97162A215 /* Build configuration list for PBXNativeTarget "KLeaksFinder" */;
+			buildPhases = (
+				239EDC263B28D4225A8AFBE43B854F38 /* Headers */,
+				B42D491A95538369467EF47E90B30039 /* Sources */,
+				4AD5F71EF36C27ACC5EEE639C2CF9701 /* Frameworks */,
+				996E3B051278EABD18BBE2BEDA140E85 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KLeaksFinder;
+			productName = KLeaksFinder;
+			productReference = BBCA6A90B02978AA561D1084DBA63E7C /* KLeaksFinder */;
+			productType = "com.apple.product-type.framework";
+		};
+		B58D4CE06B1DC558EB2AAEEC64EACBF8 /* Pods-KLeaksFinder_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCB349F1EF1562846FAD9D98098AA1D6 /* Build configuration list for PBXNativeTarget "Pods-KLeaksFinder_Example" */;
+			buildPhases = (
+				7649A6A1A58A076CC30B884F397215B6 /* Headers */,
+				E6F8088E159F2ABFBDB7426990E00894 /* Sources */,
+				747DAB1CACB32ABABDA726DF0073EB76 /* Frameworks */,
+				C236D3A3624BE3FF8004BC0ADC3ECCAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7701358AEF000C71E2C01EF7C14CD07F /* PBXTargetDependency */,
+			);
+			name = "Pods-KLeaksFinder_Example";
+			productName = Pods_KLeaksFinder_Example;
+			productReference = 10000965B90AC578A1BF09BC4D441B08 /* Pods-KLeaksFinder_Example */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = EC1585A0118CD0044426BA40958D3BBE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				951089D0DD5F7CB66C4258C907950C98 /* KLeaksFinder */,
+				B58D4CE06B1DC558EB2AAEEC64EACBF8 /* Pods-KLeaksFinder_Example */,
+				3BBF57E3382AF0AFACC9CC58057F93B4 /* Pods-KLeaksFinder_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		996E3B051278EABD18BBE2BEDA140E85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C236D3A3624BE3FF8004BC0ADC3ECCAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5D12A3D1FE93BA5FCE6654BD5C36DA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3023DDAD3A1DC4B5E627BD2F6051B8E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A872148ED91BFAD1F1067D662858B2B /* Pods-KLeaksFinder_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B42D491A95538369467EF47E90B30039 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFFD086DA46C3175779850DD71CF06CA /* KLeaksFinder-dummy.m in Sources */,
+				7EFD898393EBE91F8E09356D696460B7 /* ReplaceMe.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6F8088E159F2ABFBDB7426990E00894 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55D3621AC44A7CF85218A736DFF1C019 /* Pods-KLeaksFinder_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7701358AEF000C71E2C01EF7C14CD07F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KLeaksFinder;
+			target = 951089D0DD5F7CB66C4258C907950C98 /* KLeaksFinder */;
+			targetProxy = 236A01E54EABC24875287148B1808A25 /* PBXContainerItemProxy */;
+		};
+		A877572947CBE8AE714AAF7995D211FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-KLeaksFinder_Example";
+			target = B58D4CE06B1DC558EB2AAEEC64EACBF8 /* Pods-KLeaksFinder_Example */;
+			targetProxy = 63460BC0B805C9153424329AB89AEA98 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4BF8CADECAD3401E5066CAAFF5941D76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92163AE8C6F4BF0FB35B4B3EE96A5434 /* Pods-KLeaksFinder_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KLeaksFinder_Example/Pods-KLeaksFinder_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KLeaksFinder_Example/Pods-KLeaksFinder_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7EE7A78859F657F6BEFC651185B43192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		8C948C2A33D2009CC0C5226D8C95CDC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3F3DDDE53FA162DD079D78508C7BA5A /* Pods-KLeaksFinder_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KLeaksFinder_Example/Pods-KLeaksFinder_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KLeaksFinder_Example/Pods-KLeaksFinder_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9802685AF66B861110138320B529F044 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACB6C3DF0F3442003C56AE567250698F /* Pods-KLeaksFinder_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KLeaksFinder_Tests/Pods-KLeaksFinder_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KLeaksFinder_Tests/Pods-KLeaksFinder_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B4909953CBB9A7DCD1F8A2938F6903FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5150242F43125DB64DEC704DD58B4954 /* KLeaksFinder.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KLeaksFinder/KLeaksFinder-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KLeaksFinder/KLeaksFinder-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KLeaksFinder/KLeaksFinder.modulemap";
+				PRODUCT_MODULE_NAME = KLeaksFinder;
+				PRODUCT_NAME = KLeaksFinder;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CA6A26575D5343791DDF27FA63A402BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB1A645E6D979646A3DC99FF60EFF242 /* Pods-KLeaksFinder_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KLeaksFinder_Tests/Pods-KLeaksFinder_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KLeaksFinder_Tests/Pods-KLeaksFinder_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		D4E8D69C16512DA4A256DD3AF0FB339C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6F394E1031B22775D94A6D435144098 /* KLeaksFinder.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KLeaksFinder/KLeaksFinder-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KLeaksFinder/KLeaksFinder-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KLeaksFinder/KLeaksFinder.modulemap";
+				PRODUCT_MODULE_NAME = KLeaksFinder;
+				PRODUCT_NAME = KLeaksFinder;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		065B763BCED0C671B2AD1F3D086FE79D /* Build configuration list for PBXNativeTarget "Pods-KLeaksFinder_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9802685AF66B861110138320B529F044 /* Debug */,
+				CA6A26575D5343791DDF27FA63A402BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2853932D25E524DEE869BAA97162A215 /* Build configuration list for PBXNativeTarget "KLeaksFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4E8D69C16512DA4A256DD3AF0FB339C /* Debug */,
+				B4909953CBB9A7DCD1F8A2938F6903FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D299434AB35E7FD6F7921C8EF24742FF /* Debug */,
+				7EE7A78859F657F6BEFC651185B43192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCB349F1EF1562846FAD9D98098AA1D6 /* Build configuration list for PBXNativeTarget "Pods-KLeaksFinder_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C948C2A33D2009CC0C5226D8C95CDC7 /* Debug */,
+				4BF8CADECAD3401E5066CAAFF5941D76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

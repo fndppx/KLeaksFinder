@@ -1,0 +1,6 @@
+Target dependency graph (3 targets)
+KLeaksFinder in Pods, no dependencies
+Pods-KLeaksFinder_Example in Pods, depends on:
+KLeaksFinder in Pods (explicit)
+Pods-KLeaksFinder_Tests in Pods, depends on:
+Pods-KLeaksFinder_Example in Pods (explicit)

@@ -1,0 +1,52 @@
+{
+  "_buildCommand2" : {
+    "command" : "prepareForIndexing",
+    "enableIndexBuildArena" : false,
+    "targets" : null
+  },
+  "buildCommand" : "build",
+  "configuredTargets" : [
+    {
+      "guid" : "bfdfe7dc352907fc980b868725387e98ea7d4dad31852dd9a52675b0833542f9"
+    },
+    {
+      "guid" : "bfdfe7dc352907fc980b868725387e98c7d04128b9a852acc55dab4ec2c5ce70"
+    },
+    {
+      "guid" : "bfdfe7dc352907fc980b868725387e9871f552b1e486cb3e6de3a3cf60d53781"
+    }
+  ],
+  "containerPath" : "/Users/weikeyan/Desktop/zuoyebang/KLeaksFinder/KLeaksFinder/Example/Pods/Pods.xcodeproj",
+  "continueBuildingAfterErrors" : true,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "",
+      "buildProductsPath" : "",
+      "derivedDataPath" : "/Users/weikeyan/Library/Developer/Xcode/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/weikeyan/Library/Developer/Xcode/DerivedData/Pods-eivmjmewwxeupubxxacansaeexom/Index/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/weikeyan/Library/Developer/Xcode/DerivedData/Pods-eivmjmewwxeupubxxacansaeexom/Index/PrecompiledHeaders",
+      "pchPath" : ""
+    },
+    "configurationName" : "Release",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO"
+        }
+      }
+    }
+  },
+  "qos" : "default",
+  "schemeCommand" : "launch",
+  "schemeCommand2" : "launch",
+  "shouldCollectMetrics" : false,
+  "showNonLoggedProgress" : true,
+  "useDryRun" : true,
+  "useImplicitDependencies" : false,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : false
+}

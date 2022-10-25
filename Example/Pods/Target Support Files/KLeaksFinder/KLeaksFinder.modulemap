@@ -1,0 +1,6 @@
+framework module KLeaksFinder {
+  umbrella header "KLeaksFinder-umbrella.h"
+
+  export *
+  module * { export * }
+}

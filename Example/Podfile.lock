@@ -1,0 +1,16 @@
+PODS:
+  - KLeaksFinder (0.1.0)
+
+DEPENDENCIES:
+  - KLeaksFinder (from `../`)
+
+EXTERNAL SOURCES:
+  KLeaksFinder:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  KLeaksFinder: 340fd054ea1a17e6f76bd9132818601c00fa42da
+
+PODFILE CHECKSUM: 7f110977812bb5fb8bffdb70f5ec1e4eeccd042a
+
+COCOAPODS: 1.11.2

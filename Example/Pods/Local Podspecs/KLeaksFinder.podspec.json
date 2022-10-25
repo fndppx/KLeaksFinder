@@ -1,0 +1,22 @@
+{
+  "name": "KLeaksFinder",
+  "version": "0.1.0",
+  "summary": "A short description of KLeaksFinder.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/keyan/KLeaksFinder",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "keyan": "weikeyan@zuoyebang.com"
+  },
+  "source": {
+    "git": "https://github.com/keyan/KLeaksFinder.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "KLeaksFinder/Classes/**/*"
+}
