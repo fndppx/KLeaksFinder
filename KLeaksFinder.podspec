@@ -34,6 +34,36 @@ Pod::Spec.new do |s|
   
   s.public_header_files = 'MLeaksFinder/MLeaksFinder.h', 'MLeaksFinder/NSObject+MemoryLeak.h'
     
+#  s.requires_arc = false
+#
+#  s.requires_arc = [
+#  'KLeaksFinder/Classes/FBRetainCycleDetector/FBRetainCycleDetector/Associations/FBAssociationManager.mm',
+#  'KLeaksFinder/Classes/FBRetainCycleDetector/FBRetainCycleDetector/Layout/Blocks/FBBlockStrongLayout.m',
+#  'KLeaksFinder/Classes/FBRetainCycleDetector/FBRetainCycleDetector/Layout/Blocks/FBBlockStrongRelationDetector.m',
+#  'KLeaksFinder/Classes/FBRetainCycleDetector/FBRetainCycleDetector/Layout/Classes/FBClassStrongLayoutHelpers.m',
+#  ]
+
+  #这是需要添加mrc标识的文件，为相对路径
+
+  non_arc_files = 'KLeaksFinder/Classes/FBRetainCycleDetector/FBRetainCycleDetector/Associations/FBAssociationManager.mm',
+  'KLeaksFinder/Classes/FBRetainCycleDetector/FBRetainCycleDetector/Layout/Blocks/FBBlockStrongLayout.m',
+  'KLeaksFinder/Classes/FBRetainCycleDetector/FBRetainCycleDetector/Layout/Blocks/FBBlockStrongRelationDetector.m',
+  'KLeaksFinder/Classes/FBRetainCycleDetector/FBRetainCycleDetector/Layout/Classes/FBClassStrongLayoutHelpers.m'
+
+  #在工程中首先排除一下
+
+  s.exclude_files = non_arc_files
+
+  #一下就是子设置，为需要添加mrc标识的文件进行设置
+
+  s.subspec 'no-arc' do |sp|
+
+  sp.source_files = non_arc_files
+
+  sp.requires_arc = false
+
+  end
+
 #  s.dependency 'FBRetainCycleDetector', '0.1.4'
   
   # s.resource_bundles = {
