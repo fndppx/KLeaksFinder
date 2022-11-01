@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'KLeaksFinder'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'MLeaksFinder 的内存泄漏检测'
 
 # This description is used to generate tags and improve search results.
@@ -29,10 +29,44 @@ Pod::Spec.new do |s|
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'
+#  s.source_files  = "FBRetainCycleDetector", "{FBRetainCycleDetector,rcd_fishhook}/**/*.{h,m,mm,c}"
 
-  s.source_files = 'KLeaksFinder/Classes/**/*'
+  s.source_files = 'KLeaksFinder', "{FBRetainCycleDetector,rcd_fishhook}/**/*.{h,m,mm,c}"
+  files = Pathname.glob("FBRetainCycleDetector/**/*.{h,m,mm}")
+  files = files.map {|file| file.to_path}
+  files = files.reject {|file| mrr_files.include?(file)}
+
+  s.requires_arc = files.sort + [
+    'rcd_fishhook/**/*.{c,h}'
+  ]
+  s.public_header_files = [
+     'FBRetainCycleDetector/Detector/FBRetainCycleDetector.h',
+     'FBRetainCycleDetector/Associations/FBAssociationManager.h',
+     'FBRetainCycleDetector/Graph/FBObjectiveCBlock.h',
+     'FBRetainCycleDetector/Graph/FBObjectiveCGraphElement.h',
+     'FBRetainCycleDetector/Graph/Specialization/FBObjectiveCNSCFTimer.h',
+     'FBRetainCycleDetector/Graph/FBObjectiveCObject.h',
+     'FBRetainCycleDetector/Graph/FBObjectGraphConfiguration.h',
+     'FBRetainCycleDetector/Filtering/FBStandardGraphEdgeFilters.h',
+     'MLeaksFinder/MLeaksFinder.h',
+     'MLeaksFinder/NSObject+MemoryLeak.h'
+   ]
+
+   s.framework = "Foundation", "CoreGraphics", "UIKit"
+   s.library = 'c++'
   
-  s.public_header_files = 'MLeaksFinder/MLeaksFinder.h', 'MLeaksFinder/NSObject+MemoryLeak.h'
+#    s.public_header_files = 'MLeaksFinder/MLeaksFinder.h', 'MLeaksFinder/NSObject+MemoryLeak.h'
+  
+    mrr_files = [
+      'FBRetainCycleDetector/Associations/FBAssociationManager.h',
+      'FBRetainCycleDetector/Associations/FBAssociationManager.mm',
+      'FBRetainCycleDetector/Layout/Blocks/FBBlockStrongLayout.h',
+      'FBRetainCycleDetector/Layout/Blocks/FBBlockStrongLayout.m',
+      'FBRetainCycleDetector/Layout/Blocks/FBBlockStrongRelationDetector.h',
+      'FBRetainCycleDetector/Layout/Blocks/FBBlockStrongRelationDetector.m',
+      'FBRetainCycleDetector/Layout/Classes/FBClassStrongLayoutHelpers.h',
+      'FBRetainCycleDetector/Layout/Classes/FBClassStrongLayoutHelpers.m',
+    ]
     
 #  s.requires_arc = false
 #
@@ -45,24 +79,25 @@ Pod::Spec.new do |s|
 
   #这是需要添加mrc标识的文件，为相对路径
 
-  non_arc_files = 'KLeaksFinder/Classes/FBRetainCycleDetector/FBRetainCycleDetector/Associations/FBAssociationManager.mm',
-  'KLeaksFinder/Classes/FBRetainCycleDetector/FBRetainCycleDetector/Layout/Blocks/FBBlockStrongLayout.m',
-  'KLeaksFinder/Classes/FBRetainCycleDetector/FBRetainCycleDetector/Layout/Blocks/FBBlockStrongRelationDetector.m',
-  'KLeaksFinder/Classes/FBRetainCycleDetector/FBRetainCycleDetector/Layout/Classes/FBClassStrongLayoutHelpers.m'
+#  non_arc_files =
+#  'KLeaksFinder/Classes/FBRetainCycleDetector/FBRetainCycleDetector/Associations/FBAssociationManager+Internal.h','KLeaksFinder/Classes/FBRetainCycleDetector/FBRetainCycleDetector/Associations/FBAssociationManager.mm',
+#  'KLeaksFinder/Classes/FBRetainCycleDetector/FBRetainCycleDetector/Layout/Blocks/FBBlockStrongLayout.m',
+#  'KLeaksFinder/Classes/FBRetainCycleDetector/FBRetainCycleDetector/Layout/Blocks/FBBlockStrongRelationDetector.m',
+#  'KLeaksFinder/Classes/FBRetainCycleDetector/FBRetainCycleDetector/Layout/Classes/FBClassStrongLayoutHelpers.m'
 
   #在工程中首先排除一下
 
-  s.exclude_files = non_arc_files
+#  s.exclude_files = non_arc_files
+#
+#  #一下就是子设置，为需要添加mrc标识的文件进行设置
+#
+#  s.subspec 'no-arc' do |sp|
+#
+#  sp.source_files = non_arc_files
+#
+#  sp.requires_arc = false
 
-  #一下就是子设置，为需要添加mrc标识的文件进行设置
-
-  s.subspec 'no-arc' do |sp|
-
-  sp.source_files = non_arc_files
-
-  sp.requires_arc = false
-
-  end
+#  end
 
 #  s.dependency 'FBRetainCycleDetector', '0.1.4'
   

@@ -18,9 +18,29 @@
   "platforms": {
     "ios": "10.0"
   },
-  "source_files": "KLeaksFinder/Classes/**/*",
+  "source_files": [
+    "KLeaksFinder",
+    "{FBRetainCycleDetector,rcd_fishhook}/**/*.{h,m,mm,c}"
+  ],
+  "requires_arc": [
+    "rcd_fishhook/**/*.{c,h}"
+  ],
   "public_header_files": [
+    "FBRetainCycleDetector/Detector/FBRetainCycleDetector.h",
+    "FBRetainCycleDetector/Associations/FBAssociationManager.h",
+    "FBRetainCycleDetector/Graph/FBObjectiveCBlock.h",
+    "FBRetainCycleDetector/Graph/FBObjectiveCGraphElement.h",
+    "FBRetainCycleDetector/Graph/Specialization/FBObjectiveCNSCFTimer.h",
+    "FBRetainCycleDetector/Graph/FBObjectiveCObject.h",
+    "FBRetainCycleDetector/Graph/FBObjectGraphConfiguration.h",
+    "FBRetainCycleDetector/Filtering/FBStandardGraphEdgeFilters.h",
     "MLeaksFinder/MLeaksFinder.h",
     "MLeaksFinder/NSObject+MemoryLeak.h"
-  ]
+  ],
+  "frameworks": [
+    "Foundation",
+    "CoreGraphics",
+    "UIKit"
+  ],
+  "libraries": "c++"
 }
