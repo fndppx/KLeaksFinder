@@ -22,7 +22,7 @@ pod 'KLeaksFinder'
 
 ## Author
 
-keyan, weikeyan@zuoyebang.com
+270022748@qq.com
 
 ## License
 
