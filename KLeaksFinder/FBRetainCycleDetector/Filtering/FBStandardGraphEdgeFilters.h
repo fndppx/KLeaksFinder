@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-#import <FBRetainCycleDetector/FBObjectGraphConfiguration.h>
+#import <FBObjectGraphConfiguration.h>
 
 #ifdef __cplusplus
 extern "C" {
