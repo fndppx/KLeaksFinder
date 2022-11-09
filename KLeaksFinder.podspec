@@ -32,7 +32,7 @@ Pod::Spec.new do |s|
 #  s.source_files  = "FBRetainCycleDetector", "{FBRetainCycleDetector,rcd_fishhook}/**/*.{h,m,mm,c}"
 
   s.source_files = 'KLeaksFinder', "{FBRetainCycleDetector,rcd_fishhook}/**/*.{h,m,mm,c}"
-  files = Pathname.glob("FBRetainCycleDetector/**/*.{h,m,mm}")
+  files = Pathname.glob("KLeaksFinder/**/*.{h,m,mm}")
   files = files.map {|file| file.to_path}
   files = files.reject {|file| mrr_files.include?(file)}
 
